@@ -1,4 +1,3 @@
-import Banner from "../Banner";
 import styled from "styled-components";
 // import { useFont } from 'styled-components/hooks';
 
