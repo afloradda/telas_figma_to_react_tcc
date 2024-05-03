@@ -2,6 +2,7 @@
 // import './App.css';
 import Navbar from "./componentes/Navbar";
 import Banner from "./componentes/Banner";
+import Apresentacao from "./componentes/Apresentacao";
 import styled from "styled-components";
 
 const AppContainer = styled.div`
@@ -15,6 +16,9 @@ function App() {
     <AppContainer>
       <Navbar/>
       <Banner/>
+      <div>
+        <Apresentacao/>
+      </div>
     </AppContainer>
 
 
