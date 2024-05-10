@@ -34,6 +34,14 @@ const PhotoIcon = styled.img`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
 `;
 
+const DadosDoPerfil = styled.div`
+    display: flex;
+`;
+
+const Bio = styled.section`
+
+`
+
 function Apresentacao() {
     return (
       <div className="BaseDiv">
@@ -41,6 +49,12 @@ function Apresentacao() {
             <CoverPhoto/>
             <PhotoIcon src={photoIcon} alt="Icone Photo"/>
         </Header>
+        <DadosDoPerfil>
+          <Bio>
+            <h4>&lt;/Encost.IA&gt; ✨</h4>
+            <p>Aliquam lectus dolor, tincidunt venenatis fermentum vulputate, vehicula in velit. Aliquam erat volutpat.</p>
+          </Bio>
+        </DadosDoPerfil>
         
       </div>
     );
