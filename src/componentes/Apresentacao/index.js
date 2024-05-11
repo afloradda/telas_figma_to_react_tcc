@@ -1,4 +1,5 @@
 import photoIcon from "../../images/Ellipse 4.png"
+import iconCalender from "../../images/image 9.svg"
 import styled from "styled-components";
 
 const Header = styled.div`
@@ -13,7 +14,7 @@ const Header = styled.div`
 
 const CoverPhoto = styled.section`
   position: absolute; /* Posiciona a foto de capa de forma absoluta */
-  width: 1481px; /* Cobre toda a largura do header */
+  width: 80%;
   height: 340px; /* Cobre toda a altura do header */
   border-radius: 8px;
   background: rgba(37, 133, 125, 1);
@@ -29,17 +30,54 @@ const PhotoIcon = styled.img`
     transform: translateY(-50%); /* Centraliza verticalmente */
     width: 198px; /* Ajuste a largura conforme necessário */
     height: 196px; /* Ajuste a altura conforme necessário */
-    border-radius: 50%; /* Cria uma forma circular */
-    background-color: #fff; /* Define uma cor de fundo para o ícone */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    border-radius: 50%; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 const DadosDoPerfil = styled.div`
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Centraliza o conteúdo horizontalmente */
+  width: 100vw;
+  heigth: auto;
+  margin-top: 280px;
+  margin-left: 90px;
 `;
 
 const Bio = styled.section`
+  aling-items: flex-start;
+`
+const MelhoresAmigos = styled.section`
+  display: flex;
+  aling-items: flex-start;
+  width: 20%;
+  height: 300px;
+  border-radius: 3%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+`
+const Post = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Centraliza o conteúdo horizontalmente */
+
+  width: 70%;
+  heigth: auto;
+
+  float: right;
+`
+
+const Bloco = styled.section`
+
+  width: 70%;
+  heigth: auto;
+
+  float: right;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `
 
 function Apresentacao() {
@@ -50,10 +88,27 @@ function Apresentacao() {
             <PhotoIcon src={photoIcon} alt="Icone Photo"/>
         </Header>
         <DadosDoPerfil>
+        <br></br>
           <Bio>
             <h4>&lt;/Encost.IA&gt; ✨</h4>
-            <p>Aliquam lectus dolor, tincidunt venenatis fermentum vulputate, vehicula in velit. Aliquam erat volutpat.</p>
+            <p>Aliquam lectus dolor, tincidunt venenatis <br></br> fermentum vulputate, vehicula in velit. <br></br> Aliquam erat volutpat.</p>
+            <iconC src={iconCalender} alt="Icone calendário"/>
+            <p>Entrou no dia 11 de Março</p>
           </Bio>
+
+          <MelhoresAmigos>
+            <h1>Best Friends</h1>
+
+          </MelhoresAmigos>
+
+          <Post>
+            <Bloco>
+              <h1>POST</h1>
+            </Bloco>
+            <Bloco>
+              <h1>POST</h1>
+            </Bloco>
+          </Post>
         </DadosDoPerfil>
         
       </div>

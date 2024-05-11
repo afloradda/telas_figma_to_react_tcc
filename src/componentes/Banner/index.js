@@ -7,20 +7,20 @@ const BaseDiv = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
     height: 100vh;
 `;
 
 const BannerComponent = styled.section`
     position: relative;
-    width: 100%;
-    margin: 0 auto; /* Centraliza o banner na tela */
+    width: 100vw;
 `;
 
 const TituloEncostia = styled.div`
     display: flex; 
-    flex-direction: column; /* Mantenha a direção da coluna para empilhar elementos de texto */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%; /* Mantém a largura total */
     height: auto; /* Mantém a altura automática */
     margin-top: 160px; 
