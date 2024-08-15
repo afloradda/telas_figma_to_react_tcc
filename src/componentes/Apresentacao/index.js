@@ -104,7 +104,7 @@ function Apresentacao() {
           <Post>
             <Bloco>
               <h1>POST</h1>
-            </Bloco>
+            </Bloco> 
             <Bloco>
               <h1>POST</h1>
             </Bloco>
